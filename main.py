@@ -34,8 +34,7 @@ logger = logging.getLogger()
 logger.setLevel(logging.DEBUG)
 
 # get dataserver domain
-#dataserverDomain = os.environ['DATASERVER_DOMAIN']
-dataserverDomain = 'http://localhost:8080'
+dataserverDomain = os.environ['DATASERVER_DOMAIN']
 
 # define job : request and response
 def job():
