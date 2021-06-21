@@ -50,7 +50,7 @@ def job():
     for item in resBody:
       count += 1
       item['is_pos'] = sentiment_predict(item['body'])
-      logger.info('{label} {body}'.format(label=item['is_pos'], body=item['body']))
+      logger.info('id : {id}, label : {label}, body : {body}'.format(id=item['id'], label=item['is_pos'], body=item['body']))
 
     if count == 0:
         return
